@@ -52,7 +52,8 @@
   <p>本アプリが利用する外部サービスは、アプリ内課金の管理に用いる RevenueCat と、Apple の App Store・iCloud のみです。広告・アナリティクス・トラッキング用の外部SDKは一切使用していません。</p>
 
   <h2>データの保存期間と削除のご請求</h2>
-  <p>端末内の学習進捗は、アプリを削除した時点で端末から消去されます。iCloud 上に同期されたデータはアプリの削除では消えないため、前項「iCloud 同期」の手順でユーザーご自身が削除してください。課金管理サービス（RevenueCat）に保存された購入履歴は、購入の復元に必要な期間保持されます。購入履歴の削除をご希望の場合は、下記のお問い合わせ先までご連絡ください（削除後は購入の復元ができなくなります）。本アプリが行う通信はいずれも暗号化（HTTPS）されます。</p>
+  <p>端末内の学習進捗は、アプリを削除した時点で端末から消去されます。iCloud 上に同期されたデータはアプリの削除では消えないため、前項「iCloud 同期」の手順でユーザーご自身が削除してください。課金管理サービス（RevenueCat）に保存された購入履歴は、購入の復元に必要な期間保持されます。購入履歴の削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。</p>
+  <p>なお、本アプリの課金は買い切り（非消耗型）であり、購入の事実は Apple のアカウント側にも記録されています。これは開発者が削除できるものではありません。そのため RevenueCat 側の記録を削除した後も、同じ Apple アカウントでアプリ内の「購入を復元」を実行すれば権利は回復します（その際、新しい匿名の利用者識別子で購入履歴が作り直されます）。削除によって失われるのは、それまでに RevenueCat 側へ蓄積された記録との紐づけです。</p>
 
   <h2>レビュー誘導</h2>
   <p>Apple 純正の SKStoreReviewController（App Store の標準レビュー機能）のみを使用しています。本アプリが個別にユーザーの評価情報を取得することはありません。</p>
@@ -71,6 +72,6 @@
   <p>This app does not collect personally identifiable information (name, email address, phone number, address), location data, contacts, or photos, and it requires no account. No advertising, analytics, or tracking SDKs are used.</p>
   <p>Network access is limited to (1) in-app purchase processing via the Apple App Store and RevenueCat, and (2) optional iCloud sync. For purchase management, RevenueCat receives an anonymous app user identifier, purchase/transaction history (purchase token, purchase date, the purchased product ID, receipt validation results), and technical details such as app version, OS version and country/region. This information is used solely to verify and restore purchase entitlements, never for advertising, behavioural analytics or tracking, and no personally identifiable information reaches the developer. Payment itself is processed by Apple; payment card details are never shared with the developer or RevenueCat. See <a href="https://www.revenuecat.com/privacy/">https://www.revenuecat.com/privacy/</a>.</p>
   <p>Study progress (answer history, accuracy, weak-question detection, bookmarks, last-minute checklist state, exam date) is stored in the device's UserDefaults/SharedPreferences. Uninstalling the app removes <strong>the copy stored on the device</strong>. When iCloud is enabled, the data is also synced to the user's own iCloud Key-Value Store, which the developer cannot access and which is <strong>not</strong> deleted by uninstalling the app; to erase it, go to iOS Settings &rarr; Apple ID &rarr; iCloud &rarr; Manage App Data &rarr; this app.</p>
-  <p>Retention and deletion: purchase history held by RevenueCat is retained for as long as it is needed to restore purchases. To request its deletion, contact the address above (after deletion, purchases can no longer be restored). All network communication is encrypted over HTTPS.</p>
+  <p>Retention and deletion: purchase history held by RevenueCat is retained for as long as it is needed to restore purchases. To request its deletion, contact the address above. Note that this is a one-time (non-consumable) purchase, so the purchase is also recorded against your Apple Account, which the developer cannot delete. After the RevenueCat-side record is deleted you can still tap &ldquo;Restore Purchases&rdquo; from the same Apple Account to regain access; a fresh record is then created under a new anonymous identifier. What deletion removes is the link to the history accumulated on RevenueCat up to that point. All network communication is encrypted over HTTPS.</p>
 </body>
 </html>
